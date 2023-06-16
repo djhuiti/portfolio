@@ -1,0 +1,48 @@
+.banner {
+    background: #fff;
+    background-position: center;
+    background-size: cover;
+    border-bottom:1px solid #dcdcdc;
+  }
+  
+  .banner .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    padding: 3rem 1.5rem;
+  }
+
+  .banner--large .container{
+    min-height: 60vh;
+  }
+  
+  .banner__content {
+    width: min(40em, 100%);
+    text-align: center;
+  }
+  
+  .banner__title {
+    font-size: 1.6rem;
+    line-height: 1.3;
+    color: var(--color-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+  }
+  
+  
+  @media only screen and (min-width: 45em) {
+  
+    .banner__title {
+      font-size: 1.8rem;
+    }
+  
+  }
+  
+  @media only screen and (min-width: 60em) {
+  
+    .banner__title {
+      font-size: 2rem;
+    }
+  
+  }

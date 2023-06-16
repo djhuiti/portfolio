@@ -1,0 +1,80 @@
+.project-card-group {
+    @include grid(1, 2, 2, 1.5rem);
+    padding: 3rem 0;
+    margin-bottom:0;
+    list-style-type: none;
+
+    & li {
+        display: flex;
+        flex:0 0 auto;
+        justify-content: center;
+    }
+}
+  
+.technology-card-group {
+  @include grid(1, 2, 3, 1.5rem);
+  padding: 3rem 0;
+  margin-bottom:0;
+  list-style-type: none;
+
+  & li {
+      display: flex;
+      flex:0 0 auto;
+      justify-content: center;
+  }
+}
+
+  
+  .card {
+    overflow: hidden;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dcdcdc;
+    padding: 1.5rem 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  
+  img.card__image {
+    object-fit: cover;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .card__title {
+    font-size: 1.2rem;
+    color: var(--color-secondary-dark);
+    margin: 1.5rem 0 0 0;
+    line-height: 1.3;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+  }
+  
+  .card__text {
+    flex-grow: 2;
+    text-align: center;
+  }
+  
+  @media only screen and (min-width: 45em) {
+
+    img.card__image {
+        object-fit: cover;
+        width: 60%;
+        margin: 0 auto;
+      }
+  
+  }
+  
+  @media only screen and (min-width: 60em) {
+  
+    img.card__image {
+        object-fit: cover;
+        width: 80%;
+        margin: 0 auto;
+      }
+
+  }

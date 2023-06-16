@@ -1,0 +1,41 @@
+.contact-me {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+  
+  .contact-me__form {
+    padding: 3rem 1.5rem;
+    --cols: 1;
+    display: grid;
+    grid-template-columns: repeat(var(--cols), 1fr);
+    gap: 1.5rem;
+    overflow: hidden;
+  }
+  
+  .contact-me__title {
+    margin-bottom: .5rem;
+  }
+  
+  .form-unit.full {
+    grid-column: 1 / -1;
+  }
+  
+  @media only screen and (min-width: 45em) {
+  
+  
+    .contact__form {
+      grid-column: span 2;
+      padding: 3rem;
+      --cols: 2;
+    }
+  
+  }
+  
+  @media only screen and (min-width: 60em) {
+  
+    .contact__form {
+      grid-column: span 1;
+    }
+  
+  }

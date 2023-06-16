@@ -1,0 +1,73 @@
+.masthead {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    border-bottom:1px solid #dcdcdc;
+  }
+  
+  .masthead .container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .masthead h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    margin: 1.5rem 0;
+    font-size: 2rem;
+
+  }
+
+  .masthead a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+  }
+  
+  .masthead a:hover,
+  .masthead a:focus-visible {
+    color: var(--color-secondary);
+  }
+  
+  .masthead ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .masthead ul a {
+    display: block;
+    padding: .75rem 1.5rem;
+    text-align: center;
+  }
+  
+  .masthead ul a:hover,
+  .masthead ul a:focus-visible {
+    color: var(--color-secondary);
+  }
+  
+  @media only screen and (min-width: 45em) {
+  
+    .masthead .container {
+      padding: 0 1.5rem;
+    }
+  
+    .masthead ul {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .masthead ul a {
+      padding: 1.5rem;
+      font-size: 1rem;
+    }
+  
+  }
+  
+  @media only screen and (min-width: 60em) {
+  
+  
+  }
